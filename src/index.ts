@@ -16,6 +16,6 @@ app.use(bodyParser.json({ limit: "10mb" }));
 
 app.use("/get", (req, res, next) => {
   return res.json({ a: "a" });
-}); 
+});
 
-app.listen(8080);
+app.listen(8080, () => console.log("server running "));
