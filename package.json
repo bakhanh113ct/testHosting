@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start:dev": "npx nodemon",
-    "start": "nodemon",
-    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "build": "rimraf ./dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
